@@ -24,6 +24,15 @@ const projects = [
         githubUrl: "https://github.com/parthdabhi1703/Spotify-Clone"
     },
     {
+        id: "todo-app",
+        title: "Todo App",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "A sleek and responsive Todo application with dark mode functionality, designed with an intuitive interface and modern styling using HTML, CSS, and JavaScript.",
+        image: "https://i.ibb.co/d4DLbfQ/file-2024-12-30-15-14-47.png",
+        liveUrl: "https://parthdabhi1703.github.io/Todo-App",
+        githubUrl: "https://github.com/parthdabhi1703/Todo-App"
+    },
+    {
         id: "simon-game",
         title: "Simon Game",
         technologies: ["HTML", "CSS", "JavaScript"],
@@ -120,34 +129,6 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     const message = document.getElementById('message').value;
     window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
 });
-
-// Add hover effect to contact items
-document.querySelectorAll('.contact-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        const icon = item.querySelector('i');
-        icon.setAttribute('data-lucide-props', '{"stroke":"url(#gradient)"}');
-        lucide.createIcons();
-    });
-    item.addEventListener('mouseleave', () => {
-        const icon = item.querySelector('i');
-        icon.removeAttribute('data-lucide-props');
-        lucide.createIcons();
-    });
-});
-
-// Create gradient for icons
-const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svg.setAttribute("width", "0");
-svg.setAttribute("height", "0");
-svg.innerHTML = `
-    <defs>
-        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:rgb(76, 0, 255);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(59,130,246);stop-opacity:1" />
-        </linearGradient>
-    </defs>
-`;
-document.body.appendChild(svg);
 
 const background = document.getElementById('background');
 

@@ -19,7 +19,7 @@ const projects = [
         title: "YapTalk – Real-time Chat App",
         technologies: ["HTML", "CSS", "JavaScript", "Socket.io"],
         description: "A real-time chat application built using Socket.io that allows users to join and communicate instantly with others.",
-        image: "https://i.ibb.co/7NZyx3MB/Picsart-25-04-19-20-31-35-162.png",
+        image: "https://i.ibb.co/RpMQHxnd/YapTalk.png",
         liveUrl: "https://yaptalk.onrender.com",
         githubUrl: "https://github.com/parthdabhi1703/YapTalk"
     },

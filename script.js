@@ -15,6 +15,15 @@ const skills = [
 // Projects data
 const projects = [
     {
+        id: "yaptalk",
+        title: "YapTalk – Real-time Chat App",
+        technologies: ["HTML", "CSS", "JavaScript", "Socket.io"],
+        description: "A real-time chat application built using Socket.io that allows users to join chatrooms and communicate instantly with others.",
+        image: "https://i.ibb.co/7NZyx3MB/Picsart-25-04-19-20-31-35-162.png",
+        liveUrl: "https://yaptalk.onrender.com",
+        githubUrl: "https://github.com/parthdabhi1703/YapTalk"
+    },
+    {
         id: "spotify-clone",
         title: "Spotify Clone",
         technologies: ["HTML", "CSS"],

@@ -28,7 +28,7 @@ const projects = [
         title: "Spotify Clone",
         technologies: ["HTML", "CSS"],
         description: "A responsive web application replicating the Spotify UI, built entirely with HTML and CSS.",
-        image: "https://i.ibb.co/VpWsM85/file-2024-12-29-13-15-28.png",
+        image: "https://i.ibb.co/Q35Tf8qR/Spotify-Clone.png",
         liveUrl: "https://parthdabhi1703.github.io/Spotify-Clone",
         githubUrl: "https://github.com/parthdabhi1703/Spotify-Clone"
     },

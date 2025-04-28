@@ -140,16 +140,16 @@ document.querySelectorAll('.project-header').forEach(header => {
 // });
 
 // Experimenting with EmailJS
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   (function(){
     // Initialize EmailJS with your public key
-    emailjs.init('EMAILJS_PUBLIC_KEY');
+    emailjs.init('5fuJmqoogU2MiHnNP'); 
   })();
 
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    emailjs.send('EMAILJS_SERVICE_ID', 'EMAILJS_TEMPLATE_ID', {
+
+    // Send the email with message from the form
+    emailjs.send('service_parthdabhi1703', 'template_ikllfy9', {
       message: document.getElementById('message').value
     }).then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
@@ -160,7 +160,6 @@ document.querySelectorAll('.project-header').forEach(header => {
       alert('Failed to send message. Try again!');
     });
   });
-
 
 
 const background = document.getElementById('background');

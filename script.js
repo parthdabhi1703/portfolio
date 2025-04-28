@@ -133,11 +133,45 @@ document.querySelectorAll('.project-header').forEach(header => {
 });
 
 // Handle contact form submission
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+// document.getElementById('contact-form').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const message = document.getElementById('message').value;
+//     window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
+// });
+
+// Experimenting with EmailJS
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    // Initialize EmailJS with your public key
+    emailjs.init('EMAILJS_PUBLIC_KEY');
+  })();
+</script>
+
+<form id="contact-form">
+  <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const message = document.getElementById('message').value;
-    window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
-});
+    
+    emailjs.send('EMAILJS_SERVICE_ID', 'EMAILJS_TEMPLATE_ID', {
+      message: document.getElementById('message').value
+    }).then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+      document.getElementById('contact-form').reset();
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert('Failed to send message. Try again!');
+    });
+  });
+</script>
+
+
 
 const background = document.getElementById('background');
 

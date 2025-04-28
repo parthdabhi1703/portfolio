@@ -153,7 +153,7 @@ document.querySelectorAll('.project-header').forEach(header => {
       message: document.getElementById('message').value
     }).then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
-      alert('Message sent successfully!');
+      // alert('Message sent successfully!');
       document.getElementById('contact-form').reset();
     }, function(error) {
       console.log('FAILED...', error);

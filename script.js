@@ -135,7 +135,7 @@ document.querySelectorAll('.project-header').forEach(header => {
     });
 });
 
-Handle contact form submission
+// Handle contact form submission
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const message = document.getElementById('message').value;

@@ -173,7 +173,7 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
 gsap.from(".hero-content", {
   y: 50,
   opacity: 0,
-  duration: 1,
+  duration: 1.5,
   ease: "power2.out"
 });
 
@@ -182,7 +182,7 @@ gsap.from(".profile-image img", {
   scale: 0,
   duration: 1,
   delay: 0.5,
-  ease: "back.out(1.7)"
+  ease: "back.out(1.5)"
 });
 
 // Animate skills section on scroll

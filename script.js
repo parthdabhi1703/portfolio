@@ -142,7 +142,7 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
 });
 
-
+// // ========================================
 // // Experimenting with EmailJS
 //   (function(){
 //     // Initialize EmailJS with your public key
@@ -164,8 +164,75 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
 //       alert('Failed to send message. Try again!');
 //     });
 //   });
+// //========================================
 
 
+// ========================================
+// GSAP Animations
+// Fade in hero section
+gsap.from(".hero-content", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out"
+});
+
+// Animate profile image
+gsap.from(".profile-image img", {
+  scale: 0,
+  duration: 1,
+  delay: 0.5,
+  ease: "back.out(1.7)"
+});
+
+// Animate skills section on scroll
+gsap.from(".skills", {
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top 80%",
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1
+});
+
+// Animate projects section on scroll
+gsap.from(".projects", {
+  scrollTrigger: {
+    trigger: ".projects",
+    start: "top 80%",
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1
+});
+
+// Animate contact form on scroll
+gsap.from(".ask-me", {
+  scrollTrigger: {
+    trigger: ".ask-me",
+    start: "top 80%",
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1
+});
+
+// Contact Button Scroll
+const contactBtn = document.querySelector('a[href="#contact-form"]');
+contactBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const target = document.querySelector("#contact-form");
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: target.offsetTop - 100,
+    ease: "power2.out"
+  });
+});
+// ========================================
+
+
+// Background Code
 const background = document.getElementById('background');
 
 // Generate the dots

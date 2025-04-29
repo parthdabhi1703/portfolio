@@ -219,13 +219,14 @@ gsap.from(".ask-me", {
 });
 
 // Contact Button Scroll
+gsap.registerPlugin(ScrollToPlugin);
+
 const contactBtn = document.querySelector('a[href="#contact-form"]');
 contactBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const target = document.querySelector("#contact-form");
   gsap.to(window, {
     duration: 1,
-    scrollTo: target.offsetTop - 100,
+    scrollTo: { y: "#contact-form", offsetY: 100 },
     ease: "power2.out"
   });
 });

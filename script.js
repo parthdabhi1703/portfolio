@@ -135,34 +135,35 @@ document.querySelectorAll('.project-header').forEach(header => {
     });
 });
 
-// Handle contact form submission
-// document.getElementById('contact-form').addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const message = document.getElementById('message').value;
-//     window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
-// });
-
-// Experimenting with EmailJS
-  (function(){
-    // Initialize EmailJS with your public key
-    emailjs.init('5fuJmqoogU2MiHnNP'); 
-  })();
-
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
+Handle contact form submission
+document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
+    const message = document.getElementById('message').value;
+    window.location.href = `mailto:dabhiparth309@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
+});
 
-    // Send the email with message from the form
-    emailjs.send('service_parthdabhi1703', 'template_ikllfy9', {
-      message: document.getElementById('message').value
-    }).then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      // alert('Message sent successfully!');
-      document.getElementById('contact-form').reset();
-    }, function(error) {
-      console.log('FAILED...', error);
-      alert('Failed to send message. Try again!');
-    });
-  });
+
+// // Experimenting with EmailJS
+//   (function(){
+//     // Initialize EmailJS with your public key
+//     emailjs.init('5fuJmqoogU2MiHnNP'); 
+//   })();
+
+//   document.getElementById('contact-form').addEventListener('submit', function(e) {
+//     e.preventDefault();
+
+//     // Send the email with message from the form
+//     emailjs.send('service_parthdabhi1703', 'template_ikllfy9', {
+//       message: document.getElementById('message').value
+//     }).then(function(response) {
+//       console.log('SUCCESS!', response.status, response.text);
+//       // alert('Message sent successfully!');
+//       document.getElementById('contact-form').reset();
+//     }, function(error) {
+//       console.log('FAILED...', error);
+//       alert('Failed to send message. Try again!');
+//     });
+//   });
 
 
 const background = document.getElementById('background');
@@ -196,4 +197,3 @@ document.addEventListener('mousemove', (e) => {
         }
     });
 });
-

@@ -12,7 +12,7 @@ const skills = [
     { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
     { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
     { name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
-    { name: 'Jupyter Notebook', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' },
+    { name: 'Jupyter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' },
 ];
 
 // Projects data
@@ -27,13 +27,22 @@ const projects = [
         githubUrl: "https://github.com/parthdabhi1703/YapTalk"
     },
     {
-        id: "spotify-clone",
-        title: "Spotify Clone",
-        technologies: ["HTML", "CSS"],
-        description: "A responsive web application replicating the Spotify UI, built entirely with HTML and CSS.",
-        image: "https://i.ibb.co/Q35Tf8qR/Spotify-Clone.png",
-        liveUrl: "https://parthdabhi1703.github.io/Spotify-Clone",
-        githubUrl: "https://github.com/parthdabhi1703/Spotify-Clone"
+        id: "simon-game",
+        title: "Simon Game",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "A round-shaped Simon game with four colors and a button at the center, offering an engaging gameplay experience with stylish designs.",
+        image: "https://i.ibb.co/MhDdnNw/file-2024-12-29-12-57-08.png",
+        liveUrl: "https://parthdabhi1703.github.io/Simon-Says-Game",
+        githubUrl: "https://github.com/parthdabhi1703/Simon-Says-Game"
+    },
+    {
+        id: "snake-game",
+        title: "Snake Game",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "A classic snake game where the player navigates a snake to collect food while avoiding collisions with the snake's own body and the walls.",
+        image: "https://i.ibb.co/ZJhJ47G/file-2024-12-29-13-11-37.png",
+        liveUrl: "https://parthdabhi1703.github.io/Snake-Game",
+        githubUrl: "https://github.com/parthdabhi1703/Snake-Game"
     },
     {
         id: "todo-app",
@@ -45,15 +54,6 @@ const projects = [
         githubUrl: "https://github.com/parthdabhi1703/Todo-App"
     },
     {
-        id: "simon-game",
-        title: "Simon Game",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        description: "A round-shaped Simon game with four colors and a button at the center, offering an engaging gameplay experience with stylish designs.",
-        image: "https://i.ibb.co/MhDdnNw/file-2024-12-29-12-57-08.png",
-        liveUrl: "https://parthdabhi1703.github.io/Simon-Says-Game",
-        githubUrl: "https://github.com/parthdabhi1703/Simon-Says-Game"
-    },
-    {
         id: "number-guessing-game",
         title: "Number Guessing Game",
         technologies: ["HTML", "CSS", "JavaScript"],
@@ -63,13 +63,13 @@ const projects = [
         githubUrl: "https://github.com/parthdabhi1703/Number-Guessing-Game"
     },
     {
-        id: "snake-game",
-        title: "Snake Game",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        description: "A classic snake game where the player navigates a snake to collect food while avoiding collisions with the snake's own body and the walls.",
-        image: "https://i.ibb.co/ZJhJ47G/file-2024-12-29-13-11-37.png",
-        liveUrl: "https://parthdabhi1703.github.io/Snake-Game",
-        githubUrl: "https://github.com/parthdabhi1703/Snake-Game"
+        id: "spotify-clone",
+        title: "Spotify Clone",
+        technologies: ["HTML", "CSS"],
+        description: "A responsive web application replicating the Spotify UI, built entirely with HTML and CSS.",
+        image: "https://i.ibb.co/Q35Tf8qR/Spotify-Clone.png",
+        liveUrl: "https://parthdabhi1703.github.io/Spotify-Clone",
+        githubUrl: "https://github.com/parthdabhi1703/Spotify-Clone"
     }
 ];
 
